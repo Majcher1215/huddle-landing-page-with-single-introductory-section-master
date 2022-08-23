@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Primary Colors */
+    --violet: hsl(257, 40%, 49%);
+    --softMagenta: hsl(300, 69%, 71%);
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--violet);
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+main {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+#logo {
+    width: 42.5%;
+    margin-bottom: 4em;
+}
+
+#mockups {
+    width: 100%;
+}
+
+main p {
+    margin-bottom: 2em;
+}
+
+.button {
+    align-self: center;
+    text-decoration: none;
+    color: var(--violet);
+    padding: 0.75em 4em;
+    border-radius: 2em;
+    background-color: white;
+}
+
+.socials {
+    margin-top: 5em;
+}
+
+.socials > * {
+    padding: 0.5em;
+    border-radius: 2em;
+    border: 1px solid white;
+    margin-left: 0.5em;
+}
+
+#fb {
+    padding: 0.5em 0.7em;
+    margin: 0;
+}
+
+/* iPads, Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    .preview {
+        width: 80%;
+    }
+}
+
+/* Laptops */
+@media (min-width: 769px) and (max-width: 1300px){
+    .preview {
+        width: 40%;
+    }
+}
+
+/* Desktop and Large */
+@media (min-width: 1001px) {
+
+    body {
+        background-image: url(images/bg-desktop.svg);
+    }
+
+    main {
+        width: 90%;
+        text-align: justify;
+    }
+
+    #logo {
+        width: 15%;
+        margin-top: 2em;
+        margin-bottom: 5.5em;
+    }
+
+    section {
+        display: flex;   
+    }
+
+    #mockups {
+        width: 130%;
+        margin-right: 4em;
+    }
+
+    main h1 {
+        width: 70%;
+        font-size: 2em;
+        margin-top: 1.5em;
+    }
+
+    main p {
+        width: 87.5%;
+        line-height: 1.5em;
+    }
+
+    .socials {
+        align-self: flex-end;
+        margin-top: 3em;
+    }
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
